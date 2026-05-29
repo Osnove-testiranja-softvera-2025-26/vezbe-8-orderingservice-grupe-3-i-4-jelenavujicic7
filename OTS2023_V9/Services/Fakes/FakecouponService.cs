@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OTS2023_V9.Services.Fakes
+{
+    public class FakecouponService : IcouponService
+    {
+        public Coupon Coupon { get; set; }
+        public Guid UsedCouponId { get; set; }
+        
+        public Coupon getCouponById(Guid id)
+        {
+            return Coupon;
+        }
+    }
+}
